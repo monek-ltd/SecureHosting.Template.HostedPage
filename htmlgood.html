@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN" "http://www.w3.org/tr/html4/loose.dtd">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title>Transaction Complete</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<!-- Bootstrap core CSS -->
+	    <link href="https://secure-server-hosting.com/secutran/secureforms/sh220485/bootstrap.css" rel="stylesheet">
+	    <!-- Bootstrap theme -->
+	    <link href="https://secure-server-hosting.com/secutran/secureforms/sh220485/bootstrap-theme.css" rel="stylesheet">
+</head>
+	<body>
+		<div class="row">&nbsp;</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">&nbsp;</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				 	<center><h4>Transaction Complete</h4></center>
+				</div>
+				<div class="panel-body">
+					<div class="alert alert-success">
+						<p><strong>Your transaction has been authorised and your card will be billed for $transactionamount. Please note your transaction reference number: <span style="font-size:20px;">$trannum</span> and print or save this page for your records.</strong></p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<h3>Your purchases</h3>
+						</div>
+					</div>
+					<div class="well well-lg">
+						<div class="row">
+							<div class="col-md-7">
+								<p><strong>Item Description</strong></p>
+								<loopstart:shoplst:>
+								$itemdesc<br>
+								<loopend>
+							</div>
+							<div class="col-md-1">
+								<p><strong>Quantity</strong></p>
+								<loopstart:shoplst:>
+								$itemquan<br>
+								<loopend>
+							</div>
+							<div class="col-md-2">
+								<p><strong>Item Price</strong></p>
+								<loopstart:shoplst:>
+								$transactioncurrency &nbsp;$itempric<br>
+								<loopend>
+							</div>
+							<div class="col-md-2">
+								<p><strong>Total Price</strong></p>
+								<loopstart:shoplst:>
+								$transactioncurrency &nbsp;$itemtota<br>
+								<loopend>
+							</div>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">
+							<div class="col-md-2">
+								<strong>Tax:</strong> 
+								<p>$transactiontax</p>
+							</div>
+							<div class="col-md-2">
+								<strong>Shipping:</strong>
+								<p>$transactioncurrency &nbsp;$shippingcharge</p>
+							</div>
+							<div class="col-md-2">
+								<strong>Total:</strong>
+								<p>$transactionamount</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p><strong>You should also receive a confirmation Email shortly. Please check both your inbox and spam folders within your Email client.</strong></p>
+								<button class="btn btn-primary" onclick="window.print();">Print This Page</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
