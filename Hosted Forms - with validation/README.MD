@@ -20,4 +20,4 @@ all files are required to be uploaded to your account, you can name the index.ht
 
 This is the initial screenshot of the page:
 
-![screenshot 1](Hosted Forms - with validation/documentation/screenshot1.JPG?raw=true "Optional Title")
+![screenshot 1](https://github.com/monek-ltd/SecureHostingGenericTemplates/blob/73adff38de42680687cb5eb8ede18f4863cf66cc/Hosted%20Forms%20-%20with%20validation/documentation/screenshot1.JPG?raw=true "Optional Title")
