@@ -15,3 +15,9 @@ transactionamount
 ## files 
 
 all files are required to be uploaded to your account, you can name the index.html to whatever you require, but the other files must be as provided
+
+## example
+
+This is the initial screenshot of the page:
+
+![screenshot 1](/documentation/screenshot1.JPG?raw=true "Optional Title")
